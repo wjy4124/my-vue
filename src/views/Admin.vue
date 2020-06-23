@@ -6,12 +6,16 @@
 
 <script>
   // import _ from 'lodash'
+  // import echart from 'echart'
+  // import URI from 'urijs'
   export default {
     data() {
       return {}
     },
     created() {
-      // console.info('about', _)
+      // console.info(_)
+      // console.info('admin', echart)
+      // console.info('admin', URI)
     }
   }
 </script>
