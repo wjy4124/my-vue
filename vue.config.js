@@ -111,6 +111,7 @@ module.exports = {
     config.plugins.delete('prefetch')
     config.plugins.delete('preload')
 
+    config.resolve.symlinks(false)
     // // 或者
     // // 修改它的选项：
     // config.plugin('prefetch').tap(options => {
