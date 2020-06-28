@@ -80,7 +80,7 @@
     },
     beforeDestroy() {
       this.unloadH()
-      window.removeEventListener('beforeunload', this.unloadH)
+      window.removeEventListener('pagehide', this.unloadH)
     },
     computed: {
       precent() {
