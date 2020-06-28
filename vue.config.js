@@ -1,5 +1,6 @@
 let webpack = require('webpack')
 let SkeletonWebpackPlugin = require('vue-skeleton-webpack-plugin')
+const MomentLocalesPlugin = require('moment-locales-webpack-plugin');
 let path = require('path')
 module.exports = {
   css: {
@@ -105,6 +106,7 @@ module.exports = {
         ]
       }
     }))
+    config.plugins.push(new MomentLocalesPlugin())
   },
   chainWebpack: config => {
     // 移除 prefetch 插件
