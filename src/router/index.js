@@ -27,31 +27,38 @@ Vue.use(VueRouter)
     component: () => import(/* webpackChunkName: "admin" */ '../views/Admin.vue')
   },
   {
-    path: '/page1',
-    name: 'Page1',
+    path: '/pager',
+    name: 'Pager',
     meta: {
+      title: '分页',
       keep: true,
     },
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "page1" */ '../views/Page1.vue')
+    component: () => import(/* webpackChunkName: "page1" */ '../views/pager.vue')
   },
   {
-    path: '/page2',
-    name: 'Page2',
+    path: '/scrollpage',
+    name: 'ScrollPage',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "page2" */ '../views/Page2.vue')
+    meta: {
+      title: '长列表'
+    },
+    component: () => import(/* webpackChunkName: "page2" */ '../views/scrollpage.vue')
   },
   {
-    path: '/page3',
-    name: 'Page3',
+    path: '/lazy',
+    name: 'Lazy',
+    meta: {
+      title: '懒加载'
+    },
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "page2" */ '../views/Page3.vue')
+    component: () => import(/* webpackChunkName: "page2" */ '../views/lazy.vue')
   }
 ]
 
