@@ -30,6 +30,7 @@
       }
     },
     created() {
+      console.info(2)
       this.loading = false
     },
     computed: {

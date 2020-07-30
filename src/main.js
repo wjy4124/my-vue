@@ -9,6 +9,7 @@ import Vant from 'vant'
 import 'vant/lib/index.css';
 import Utils from './utils'
 
+console.info(3)
 Vue.use(Utils)
 Vue.use(Vant)
 Vue.config.productionTip = false
